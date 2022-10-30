@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(245, 222, 179);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    flex: 5;
+    margin-right: 10px;
+}
+
+#task-input:focus {
+    background: linear-gradient(to right, rgba(233, 231, 97, 0.5), rgba(6, 32, 3, 0.4));
+    color: rgb(0, 0, 0);
+}
+
+#add-task {
+    flex: 1;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 2px sloid green;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+#add-task:hover{
+    background-color: green;
+    color:white
+}
+
+/* dynacmic tag style */
+
+.task {
+    width: 100%;
+    background-color: wheat;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.checked {
+    flex: 1;
+}
+
+.task li {
+    flex: 4;
+    list-style: none;
+}
+
+.delete-btn {
+    flex: 1;
+    background-color: white;
+    border-radius: 2px solid red;
+    padding: 4px;
+    color: red;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 5px;
+}
