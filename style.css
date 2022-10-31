@@ -67,8 +67,12 @@ body {
     align-items: center;
 }
 
-.checked {
+.complete-btn {
     flex: 1;
+    padding: 4px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid orange;
 }
 
 .task li {
