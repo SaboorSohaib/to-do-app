@@ -7,10 +7,9 @@ addTask.addEventListener('click', () => {
     const task = document.createElement('div');
     task.classList.add('task');
 
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.classList.add('checked');
-    task.appendChild(checkbox);
+    const completeBtn = document.createElement('button');
+    completeBtn.classList.add('complete-btn');
+    task.appendChild(completeBtn);
 
     const li = document.createElement('li');
     li.innerText = `${taskInput.value}`;
