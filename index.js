@@ -8,6 +8,7 @@ addTask.addEventListener('click', () => {
     task.classList.add('task');
 
     const completeBtn = document.createElement('button');
+    completeBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
     completeBtn.classList.add('complete-btn');
     task.appendChild(completeBtn);
 
