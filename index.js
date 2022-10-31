@@ -29,8 +29,8 @@ addTask.addEventListener('click', () => {
 
     taskInput.value = "";
 
-    checkbox.addEventListener('click', () => {
-        checkbox.parentElement.style.textDecoration = 'line-through';
+    completeBtn.addEventListener('click', () => {
+        completeBtn.parentElement.style.textDecoration = 'line-through';
     })
 
     deleteBtn.addEventListener('click', (e) => {
